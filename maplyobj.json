@@ -1,0 +1,14 @@
+[
+    {
+        "ob":"lake",
+        "img":"lake.PNG",
+        "terrain":[[1,1,1],[1,1,1]]
+
+    },
+    {
+        "ob": "wiotrok",
+        "img":"wiotrok.gif",
+        "terrain":[[0,0,0],[0,0,2]]
+
+    }
+]
