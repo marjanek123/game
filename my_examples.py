@@ -12,11 +12,12 @@ SQUARESIZE = 32
 terrain = [pygame.image.load('grass.GIF'), pygame.image.load('grass2.GIF')]
 
 
-class adventure_map():
+class adventure_map:
     def __init__(self):
         self.terrain=[]
         self.obj=[]
         self.board=create_board()
+        self.regenerate_map=regenerate_map()
 
 
 
@@ -30,20 +31,20 @@ class adventure_map():
         np.flip(board, 0)
 
 
-    def regenerate_map(self,board):
+    def regenerate_map():
         for c in range(COLUMN_COUNT):
             for r in range(ROW_COUNT):
                 print(r)
                 screen.blit(random.choice(terrain), (int(c * SQUARESIZE), int(r * SQUARESIZE)))
 
 
-    board = create_board()
-    width = COLUMN_COUNT * SQUARESIZE
-    height = (ROW_COUNT) * SQUARESIZE
-    size = (width + 100, height + 100)
-    screen = pygame.display.set_mode(size)
+    
+width = COLUMN_COUNT * SQUARESIZE
+height = (ROW_COUNT) * SQUARESIZE
+size = (width + 100, height + 100)
+screen = pygame.display.set_mode(size)
     # box= pygame.Rect(34,34,5,5,)
-    regenerate_map(print_board(board))
+    # regenerate_map(print_board(board))
 
 pygame.init()
 
@@ -58,7 +59,7 @@ while True:
             pygame.quit()
             sys.exit(0)
 
-    print_board(board)
+    adventure_map.regenerate_map()
 
 
 

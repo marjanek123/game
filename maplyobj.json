@@ -2,13 +2,42 @@
     {
         "ob":"lake",
         "img":"lake.PNG",
-        "terrain":[[1,1,1],[1,1,1]]
+        "terrain":[[1,1,1],[1,1,1],[0,0,0]],
+        "index_z":2
 
     },
     {
         "ob": "wiotrok",
-        "img":"wiotrok.gif",
-        "terrain":[[0,0,0],[0,0,2]]
+        "img":"wiotrok.png",
+        "terrain":[[2,0,0],[0,0,0],[0,0,0]],
+        "index_z":6
+
+    },
+    {
+        "ob":"cave",
+        "img":"cave.png",
+        "terrain":[[1,1,1],[1,5,1],[0,0,0]],
+        "index_z":4
+
+    },
+    {
+        "ob": "pir",
+        "img":"pir.png",
+        "terrain":[[1,1,0],[1,4,0],[0,0,0]],
+        "index_z":9
+    },
+    {
+        "ob": "crack",
+        "img":"crack.png",
+        "terrain":[[1,1,0],[1,1,1],[0,1,1]],
+        "index_z":1
+
+    },
+    {
+        "ob": "tree",
+        "img":"tree.png",
+        "terrain":[[1,0,0],[0,0,0],[0,0,0]],
+        "index_z":1
 
     }
 ]

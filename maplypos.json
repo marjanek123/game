@@ -1,31 +1,76 @@
 
 [
     {
-        "ob":"lake",
-        "pos":[2,4]
-
-
+        "ob":"tree",
+        "pos":[0,0]
     },
     {
-        "ob": "wiotrok",
-        "pos":[2,5]
-
+        "ob": "tree",
+        "pos":[0,1]
     },
     {
-        "ob": "wiotrok",
+        "ob": "tree",
+        "pos":[0,2]
+    },
+    {
+        "ob":"tree",
+        "pos":[1,0]
+    },
+    {
+        "ob": "tree",
+        "pos":[1,1]
+    },
+    {
+        "ob": "tree",
+        "pos":[1,2]
+    },
+    {
+        "ob":"tree",
+        "pos":[2,0]
+    },
+    {
+        "ob": "tree",
         "pos":[2,1]
-
     },
     {
-        "ob":"lake",
-        "pos":[4,0]
-
-
+        "ob": "tree",
+        "pos":[2,2]
     },
     {
-        "ob":"lake",
-        "pos":[5,3]
-
-
+        "ob":"tree",
+        "pos":[6,8]
+    },
+    {
+        "ob": "tree",
+        "pos":[6,7]
+    },
+    {
+        "ob": "tree",
+        "pos":[6,9]
+    },
+    {
+        "ob":"tree",
+        "pos":[7,5]
+    },
+    {
+        "ob": "tree",
+        "pos":[7,8]
+    },
+    {
+        "ob": "tree",
+        "pos":[5,7]
+    },
+    {
+        "ob":"tree",
+        "pos":[6,9]
+    },
+    {
+        "ob": "tree",
+        "pos":[10,7]
+    },
+    {
+        "ob": "tree",
+        "pos":[9,5]
     }
+    
 ]

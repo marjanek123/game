@@ -3,6 +3,11 @@ import pygame
 import sys
 import random
 import json
+import settings
+from kaa.nodes import Node
+from kaa.geometry import Vector
+import random
+
 is_game_run= True
 ROW_COUNT = 16
 pygame.init()
@@ -57,10 +62,8 @@ class background_map:
     def print_board(self):
         np.flip(self.board, 0)
 
-    def regenerate_map(self):
-        for c in range(self.COLUMN_COUNT):
-            for r in range(self.ROW_COUNT):
-                screen.blit(random.choice(terrain), (int(c * SQUARESIZE), int(r * SQUARESIZE)))
+
+        
 class adventure_map:
 #    sorce = "obj.json"
     ROW_COUNT = 16
@@ -88,8 +91,25 @@ class adventure_map:
             pass
         return np.zeros((ROW_COUNT,COLUMN_COUNT))
 
+def openerbg():
+        with open("map/bg_map.json") as bg:
+            data = json.load(bg)
+        # with open("map/bg_object.json") as fr:
+        #     ob_data = json.load(fr)
 
+        
 
+        for x in range(settings.MAP_Y*settings.MAP_X):
+            t = data[x]["t"]
+            p = data[x]["pos"]
+            gett(t,p)
+
+def gett(t,pos):
+    with open("map/bg_object.json") as fr:
+        ob_data = json.load(fr)
+    for a in range(len(ob_data)):
+        if ob_data[a]["terainbg"] == t:
+            screen.blit(pygame.image.load('assets/bgmap/{}'.format(ob_data[a]["imgbg"])), (pos[0] * 32 , pos[1] * 32))
 maply=background_map(16,16)
 
 
@@ -99,7 +119,7 @@ height = (ROW_COUNT) * SQUARESIZE
 size = (width+100, height+100)
 screen = pygame.display.set_mode(size)
 box= pygame.Rect(34,34,5,5,)
-maply.regenerate_map()
+openerbg()
 #screen.blit(crack,(0,0))
 pygame.init()
 maply.print_board()

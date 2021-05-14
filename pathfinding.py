@@ -102,8 +102,8 @@ def main():
 
     maze = do_map()
 
-    start = (2, 4)
-    end = (5, 5)
+    start = (0, 0)
+    end = (1, 1)
 
     path = astar(maze, start, end)
     #print(path)

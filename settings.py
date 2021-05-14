@@ -1,0 +1,5 @@
+WIDTH = 1920
+HEIGHT = 1080
+
+MAP_X = 16
+MAP_Y = 16
